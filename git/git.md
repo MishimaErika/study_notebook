@@ -95,7 +95,16 @@
    
    // 推送到远程仓库
    git push <remote> <branch>
-
+   
+   // 推送到远程仓库指定branch
+   git push <远程仓库名> <本地分支名>:<远程分支名>
+   
+   // 拉取远程库指定branch
+   git pull <远程仓库名> <远程分支名>:<本地分支名>
+   
+   // 将远程git仓库里的指定分支拉取到本地（本地不存在的分支）
+   git checkout -b <本地分支名> <远程仓库名>/<远程分支名>
+   
    //查看某个远程仓库
    git remote show <remote>
 
